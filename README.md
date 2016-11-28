@@ -15,9 +15,6 @@ var mongocrude = require('mongocrude')
 ```
 This middleware gives direct access to the your database with a simple abstraction and api to reduce bugs and complexities. It supports all CRUD operations currently supported by MongoDB and includes actions such as `bulkwrite` without losing the strong benefits of mongodb.
 
-### Options
-
-...
 
 ## Example
 
@@ -30,7 +27,7 @@ var assert = require('assert');
 db.createOne(uri, 'users', {name: "vim"}, function(err, res){
 	if (err) throw new Error("some errors" + err);
 	
-	db.findOne(uri, 'user', function(err, user) {
+	db.findOne(uri, 'users', function(err, user) {
 		// throw err;
 		assert.equal(user.name, "vim")
 		})
