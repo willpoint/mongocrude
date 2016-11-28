@@ -1,0 +1,39 @@
+{
+  "name": "mongocrude",
+  "version": "1.1.0",
+  "description": "MongoDB CRUD utility",
+  "author": {
+    "name": "Uzondu Enudeme",
+    "email": "willpoint@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/willpoint/mongocrude.git"
+  },
+  "main": "lib/query.js",
+  "directories": {},
+  "dependencies": {
+    "mongodb": "^2.1.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha test"
+  },
+  "engine": {
+    "node": "*"
+  },
+  "files": [
+    "LICENSE",
+    "./lib",
+    "index.js"
+  ],
+  "keywords": [
+    "crud", 
+    "mongodb",
+    "database",
+    "query",
+    "nosql",
+    "db"
+  ]
+}
